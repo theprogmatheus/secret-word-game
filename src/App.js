@@ -66,6 +66,8 @@ function App() {
     setPickedCategory(category);
     setLetters(wordLetters);
 
+    console.log(word)
+
 
 
     // change the game stage
@@ -74,12 +76,35 @@ function App() {
 
   // proccess the letter input
   const verifyLetter = (letter) => {
-    console.log(letter);
+
+
+    const normalizedLetter = letter.toUpperCase();
+    if (guessedLetters.includes(normalizedLetter) || wrongLetters.includes(normalizedLetter)) return;
+
+    if (pickedWord.toUpperCase().includes(normalizedLetter)) {
+      setGuessedLetters((guessed) => [...guessed, normalizedLetter]);
+    } else {
+      setWrongLetters((wrong)=>[...wrong, normalizedLetter]);
+      setGuesses((g) => g - 1);
+    }
+
+    if (guesses <= 1)
+      setGameStage(stages[2].name);
+
   }
 
   // restarts the game
   const retry = () => {
-    setGameStage(stages[0].name);
+
+    setPickedCategory("");
+    setPickedWord("");
+    setGuesses(3);
+    setGuessedLetters([]);
+    setWrongLetters([]);
+    setScore(0);
+
+
+    startGame();
   }
 
   return (
