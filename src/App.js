@@ -115,10 +115,18 @@ function App() {
 
     const uniqueLetters = [...new Set(letters)];
 
+    if (uniqueLetters.length <= 0) return;
+
     // win condition
     if (guessedLetters.length >= uniqueLetters.length) {
+
+
+      // calculate score...
+      const calcScore = (uniqueLetters.length * 10);
+
+
       // add score
-      setScore((actualScore) => actualScore + 100);
+      setScore((actualScore) => actualScore + calcScore);
 
       // restart game with new word...
       startGame();
@@ -129,10 +137,10 @@ function App() {
 
   // restarts the game
   const retry = () => {
-    setGuesses(3);
     setScore(0);
+    setGuesses(3);
 
-    startGame();
+    setGameStage(stages[0].name)
   }
 
   return (
