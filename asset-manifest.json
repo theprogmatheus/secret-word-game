@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/secret-word-game/static/css/main.f59f9644.css",
-    "main.js": "/secret-word-game/static/js/main.49743206.js",
+    "main.css": "/secret-word-game/static/css/main.7ae88935.css",
+    "main.js": "/secret-word-game/static/js/main.3fe80686.js",
     "static/js/787.306c56d3.chunk.js": "/secret-word-game/static/js/787.306c56d3.chunk.js",
     "index.html": "/secret-word-game/index.html",
-    "main.f59f9644.css.map": "/secret-word-game/static/css/main.f59f9644.css.map",
-    "main.49743206.js.map": "/secret-word-game/static/js/main.49743206.js.map",
+    "main.7ae88935.css.map": "/secret-word-game/static/css/main.7ae88935.css.map",
+    "main.3fe80686.js.map": "/secret-word-game/static/js/main.3fe80686.js.map",
     "787.306c56d3.chunk.js.map": "/secret-word-game/static/js/787.306c56d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f59f9644.css",
-    "static/js/main.49743206.js"
+    "static/css/main.7ae88935.css",
+    "static/js/main.3fe80686.js"
   ]
 }
