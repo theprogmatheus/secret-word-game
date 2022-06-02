@@ -1,6 +1,15 @@
 # Secret Word Game
 ## A simple React game project to evolve my skills
 
+The game consists of you hitting the word, you enter letters, and every letter you hit will appear in the word, every letter you miss, you lose a chance.
+
+You receive a "hint" to try to guess the word, if you manage to get the word right, you get a score according to the difficulty of the word and are forwarded to a new word.
+
+When you lose you are taken to a GameOver screen, displaying your accumulated score throughout the game.
+
+It's a pretty cool little game, and you can play it by going to:
+
+
 This application was hosted at (https://theprogmatheus.github.io/secret-word-game/)
 
 This project is part of a course I'm studying, follow the prints:
